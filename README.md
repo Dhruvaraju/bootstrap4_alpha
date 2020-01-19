@@ -28,7 +28,6 @@ Learning Log for bootstrap
 - Install __EMMET__ which is a plugin which will improve html editing a lot.
     - __EMMET__ comes preinstalled with VScode.
     - Some of the short cuts are, Create an empty html
-<details><summary>Example snippets click here</summary>
 ```
 // ! and tab with out space will provide the basic html 5 structure.
 <!DOCTYPE html>
@@ -55,7 +54,6 @@ Learning Log for bootstrap
 // Nesting can also be done div>p>button.autoSize#button1
 <p><button class="autoSize" id="button1"></button></p>
  ```
- </details>
 - Adding Live server to VS code
     - Search in extensions for __Live Server__ plugin (Author Ritwick Dey) and install it.
     - It will help to view the changes in browser, without refreshing the page.
