@@ -92,3 +92,34 @@ Learning Log for bootstrap
 - We can download production or source version from https://getbootstrap.com
 
 ### Basics of bootstrap
+> Examples are present in demo.html
+#### Colours
+- CSS colour classes are given based on the functional overview, Success will have a specific colour, alert will have default and so on. This information can be found in Documentation >> Utilities >> colour
+- Text colour classes will start with 'text-' example: text-primary
+``` <p id="textdemo1" class="text-primary">Primary text</p> ```
+- Back ground colours also will have the same thing.
+- Background colour classes start with bg, eg: bg-primary
+``` <p id="textdemo1" class="bg-primary">Primary background</p> ```
+#### Buttons
+- Buttons related info will be present in documentation >> components >> buttons
+- Button classes are defined to perform there semantic purpose, Starts with btn
+- Normal buttons
+```
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button>
+<button type="button" class="btn btn-light">Light</button>
+<button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+```
+- Outline buttons will have only outline with out any background colour, class name example btn-outline-primary
+- For button sizes there are 2 sizes small (btn-sm) and large (btn-lg) 
+- Classes for button states are also available 
+```
+<button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button> // A boolean disabled is mentioned
+```
+#### Typography
