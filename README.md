@@ -28,6 +28,7 @@ Learning Log for bootstrap
 - Install __EMMET__ which is a plugin which will improve html editing a lot.
     - __EMMET__ comes preinstalled with VScode.
     - Some of the short cuts are, Create an empty html
+<details><summary>Example snippets click here</summary>
 ```
 // ! and tab with out space will provide the basic html 5 structure.
 <!DOCTYPE html>
@@ -54,4 +55,42 @@ Learning Log for bootstrap
 // Nesting can also be done div>p>button.autoSize#button1
 <p><button class="autoSize" id="button1"></button></p>
  ```
-- 
+ </details>
+- Adding Live server to VS code
+    - Search in extensions for __Live Server__ plugin (Author Ritwick Dey) and install it.
+    - It will help to view the changes in browser, without refreshing the page.
+- Themes can be set from extensions (Material theme by Mattia Astorino)
+
+> Bootstrap documentation has multiple version, so check the version which you are using properly.
+
+### Including bootstrap in your project
+- __Using a cdn(Content Delivery network)__ link in your ui project.
+- For which the links are added to our project as shown below.
+```
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
+```
+- Downloading the files and linking them in you project.
+- We can download production or source version from https://getbootstrap.com
+
+### Basics of bootstrap
