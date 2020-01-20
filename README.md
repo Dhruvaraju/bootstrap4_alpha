@@ -28,7 +28,7 @@ Learning Log for bootstrap
 - Install __EMMET__ which is a plugin which will improve html editing a lot.
     - __EMMET__ comes preinstalled with VScode.
     - Some of the short cuts are, Create an empty html
-```
+```html
 // ! and tab with out space will provide the basic html 5 structure.
 <!DOCTYPE html>
 <html lang="en">
@@ -64,7 +64,7 @@ Learning Log for bootstrap
 ### Including bootstrap in your project
 - __Using a cdn(Content Delivery network)__ link in your ui project.
 - For which the links are added to our project as shown below.
-```
+```html
 <!doctype html>
 <html lang="en">
   <head>
@@ -104,7 +104,7 @@ Learning Log for bootstrap
 - Buttons related info will be present in documentation >> components >> buttons
 - Button classes are defined to perform there semantic purpose, Starts with btn
 - Normal buttons
-```
+```html
 <button type="button" class="btn btn-primary">Primary</button>
 <button type="button" class="btn btn-secondary">Secondary</button>
 <button type="button" class="btn btn-success">Success</button>
@@ -119,7 +119,37 @@ Learning Log for bootstrap
 - Outline buttons will have only outline with out any background colour, class name example btn-outline-primary
 - For button sizes there are 2 sizes small (btn-sm) and large (btn-lg) 
 - Classes for button states are also available 
-```
+```html
 <button type="button" class="btn btn-lg btn-primary" disabled>Primary button</button> // A boolean disabled is mentioned
 ```
 #### Typography
+- Default heading from h1 to h6 can be given without any class they will have there own formating.
+- We can also use h1 to h2 as a class ```html <p class="h1">h1. Bootstrap heading</p> ```
+- 'text-muted' will provide a slight faded effect.
+- Display texts will provide an opinionated heading style for which we have display-1 to display-4 classes. ```html <h1 class="display-1">Display 1</h1> ```
+- .lead will provide a paragraph to stand out from others.
+- Basic text formating is done with the tags itself no additional classes required
+```
+            <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+            <p><del>This line of text is meant to be treated as deleted text.</del></p>
+            <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+            <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+            <p><u>This line of text will render as underlined</u></p>
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+            <p><strong>This line rendered as bold text.</strong></p>
+            <p><em>This line rendered as italicized text.</em></p>
+```
+- class blockquote for quoting others work and source can be mentioned in footer tag with class blockquote-footer wrap the source in cite.
+```html
+<blockquote class="blockquote">
+  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+</blockquote>
+```
+- For text alignment use the classes text-center, text-right, text-left
+```html
+<blockquote class="blockquote text-right">
+            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+          </blockquote>
+```
