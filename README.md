@@ -153,3 +153,22 @@ Learning Log for bootstrap
             <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
           </blockquote>
 ```
+### Jumbotron
+- A lightweight, flexible component that can optionally extend the entire viewport to showcase key messages on your site.
+- Available in documentation >> components >> Jumbotron
+- This is a class that need to be applied on div tag, we have jumbotron and fluid jumbotron
+  - Jumbotron will highlight the message provided by using container like style
+  - Fluid jumbotron will extend up to the corners of the page created.
+  - Simple Jumbotron is mentioned below, examples are available in jumbotron_eg.html
+```html
+<div class="jumbotron">
+  <h1 class="display-4">Hello, world!</h1>
+  <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  </p>
+</div>
+```
+
