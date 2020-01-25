@@ -172,3 +172,76 @@ Learning Log for bootstrap
 </div>
 ```
 
+### Breakpoints
+- The exact size of screen where bootstrap changes the appearance of the elements on the screen are called responsive breakpoints. General pixel sizes that are considered are mentioned below
+- Documentation available under overview
+```sass
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+```
+### Display
+- docs available under utility 
+- This utility class is used to hide and display ui elements when a breakpoint happens. Quickly and responsively toggle the 
+display value of components.
+- Display utility classes that apply to all breakpoints, from xs to xl, have no breakpoint abbreviation in them. This is because those classes are applied from min-width: 0; and up, and thus are not bound by a media query. The remaining breakpoints, however, do include a breakpoint abbreviation.
+- Syntax for invoking display
+```
+    .d-{value} for xs
+    .d-{breakpoint}-{value} for sm, md, lg, and xl.
+
+Where value is one of:
+
+    none
+    inline
+    inline-block
+    block
+    table
+    table-cell
+    table-row
+    flex
+    inline-flex
+```
+#### Hiding elements
+
+- For faster mobile-friendly development, use responsive display classes for showing and hiding elements by device. Avoid creating entirely different versions of the same site, instead hide elements responsively for each screen size.
+- To hide elements simply use the .d-none class or one of the .d-{sm,md,lg,xl}-none classes for any responsive screen variation.
+- To show an element only on a given interval of screen sizes you can combine one ``` .d-*-none class with a .d-*-* class, ``` for example ```.d-none .d-md-block .d-xl-none``` will hide the element for all screen sizes except on medium and large devices.
+
+Screen Size |	Class
+------------------|------------------
+Hidden on all |	.d-none
+Hidden only on xs |	.d-none .d-sm-block
+Hidden only on sm |	.d-sm-none .d-md-block
+Hidden only on md |	.d-md-none .d-lg-block
+Hidden only on lg |	.d-lg-none .d-xl-block
+Hidden only on xl |	.d-xl-none
+Visible on all |	.d-block
+Visible only on xs |	.d-block .d-sm-none
+Visible only on sm |	.d-none .d-sm-block .d-md-none
+Visible only on md |	.d-none .d-md-block .d-lg-none
+Visible only on lg |	.d-none .d-lg-block .d-xl-none
+Visible only on xl |	.d-none .d-xl-block
+
+```html
+<p>Example for display classes</p>
+            <p class="d-inline bg-dark text-light">This is a p tag with display inline class d-inline</p>
+            <p class="bg-dark text-light">By default the display will be set to block, this is an example for it</p>
+            <p class="d-none">This will not appear for any screen size</p>
+            <p class="d-sm-none text-light bg-dark">This will only appear on xs screen</p>
+            <p class="d-none d-sm-block d-md-none text-light bg-dark">This will only appear in sm screen</p>
+            <p class="d-none d-md-block d-lg-none text-light bg-dark">This will only appear in md screen</p>
+            <p class="d-none d-lg-block d-xl-none text-light bg-dark">This will only appear in lg screen</p>
+            <p class="d-none d-xl-block text-light bg-dark">This will only appear in xl screen</p>
+```
